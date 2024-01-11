@@ -1,0 +1,70 @@
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+/* Roboto Condensed */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+:root{
+    --bgColor: navy;
+    --bgColorHover: rgb(100, 100, 255);
+    --textColor1: white;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+main{
+    max-width: 50%;
+    margin: auto;
+    display: grid;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--bgColor);
+}
+
+nav a{
+    padding: 0.5rem;
+
+    text-decoration: none;
+    color: var(--textColor1);
+}
+
+nav a:hover{
+    background-color: var(--bgColorHover);
+}
+
+.card{
+    border: 1px solid;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.card h3{
+    margin-top: 0;
+    text-align: center;
+
+    color: var(--textColor1);
+    background-color: var(--bgColor);
+}
+
+.card ul{
+    list-style: none;
+}
+
+.card p{
+    margin: 1rem;
+}
+
+footer{
+    padding: 1rem;
+
+    color: var(--textColor1);
+    background-color: var(--bgColor);
+}
