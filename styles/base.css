@@ -16,6 +16,21 @@ body{
     margin: 0;
 }
 
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    width: 100px;
+    margin: 1rem;
+}
+
+hr{
+    width: 100%;
+}
+
 main{
     max-width: 50%;
     margin: auto;
