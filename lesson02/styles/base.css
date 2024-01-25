@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: kanit;
+    background-color: rgb(200, 255, 221);
+}
+
+h1{
+    margin: 0;
+    padding: 3rem;
+    background-color: rgb(250, 250, 150);
+}
+
+main{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.card{
+    border: 4px solid rgb(55, 55, 55);
+    border-radius: 8px;
+    background-color: aliceblue;
+    margin: 1rem;
+    width: 100%;
+}
+
+.card h2{
+    margin: 0;
+    padding: 0.5rem;
+    color: white;
+    background-color: maroon;
+}
+
+.card h3{
+    margin: 0.5rem;
+}
+
+.card img{
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.card p{
+    padding: 1rem;
+}
