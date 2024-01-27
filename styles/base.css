@@ -31,28 +31,53 @@ hr{
     width: 100%;
 }
 
-main{
-    max-width: 50%;
-    margin: auto;
-    display: grid;
-}
+/* Nav */
 
 nav{
-    display: flex;
-    flex-direction: column;
-    
     background-color: var(--bgColor);
 }
 
 nav a{
     padding: 2rem;
-
     text-decoration: none;
     color: var(--textColor1);
 }
 
 nav a:hover{
     background-color: var(--bgColorHover);
+}
+
+.navigation{
+    display: none;
+    flex-direction: column;
+}
+
+/* Menu */
+#hamburger{
+	font-size: 2rem;
+    padding: 2rem;
+    background-color: var(--bgColor);
+    color: white;
+    border: 0;
+    align-items: center;
+    
+}
+
+#hamburger:hover{
+    background-color: var(--bgColorHover);
+    transition: 0.3s;
+}
+
+#hamburger::before {
+	content: "☰";
+}
+
+#hamburger.open::before {
+	content: "X";
+}
+
+.navigation.show{
+    display: flex;
 }
 
 .card{

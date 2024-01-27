@@ -15,6 +15,7 @@
     <link rel="icon" href="images/favicon.webp">
 
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -29,12 +30,14 @@
         <h1>Bradley Rennick</h1>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="">Chamber Site Plan</a>
-        <a href="">Chamber</a> 
-<!-- Open these in a new tab -->
-        <a href="https://www.byui.edu/">BYU-Idaho</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/1?lang=eng&id=p20#p20">Favorite Scripture</a>
+        <button id="hamburger" class=""></button>
+        <div class="navigation">
+            <a href="#">Home</a>
+            <a href="">Chamber Site Plan</a>
+            <a href="">Chamber</a>
+            <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/1?lang=eng&id=p20#p20" target="blank">Favorite Scripture</a>
+        </div>
     </nav>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
@@ -65,6 +68,7 @@
                 </ul>
             </section>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198096.44117577633!2d-94.91323625320899!3d39.12338528730284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c08ce427cf3515%3A0xdc77777b70c31e05!2sKansas%20City%2C%20KS!5e0!3m2!1sen!2sus!4v1695764797176!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <p>©<span id="currentYear"></span> Bradley Rennick, United States</p>
