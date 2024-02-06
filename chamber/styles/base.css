@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --bgColor: black;
+    --bgColorHover: gold;
+    --textColor: gold;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+/* Header */
+header{
+    display: flex;
+    padding: 2rem;
+    background-color: var(--bgColorHover);
+}
+
+header img{
+    max-width: 10rem;
+}
+
+header h1{
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+/* Hamburger */
+nav{
+    background-color: var(--bgColor);
+    margin-bottom: 1rem;
+}
+
+nav a{
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+nav a:hover, #hamburger:hover{
+    background-color: var(--bgColorHover);
+    color: black;
+    transition: 0.2s;
+}
+
+.navigation{
+    display: none;
+    flex-direction: column;
+}
+
+#hamburger{
+	font-size: 2rem;
+    padding: 2rem;
+    color: white;
+    background-color: var(--bgColor);
+    border: 0;
+}
+
+#hamburger::before {
+	content: "☰";
+}
+
+#hamburger.open::before {
+	content: "X";
+}
+
+.navigation.show{
+    display: flex;
+}
+
+#action{
+    font-size: 2rem;
+}
+
+/* Cards */
+.card{
+    border: 1px solid;
+    margin: 1rem;
+}
+
+.card h2{
+    background-color: black;
+    color: gold;
+    padding: 1rem;
+    margin-top: 0;
+}
+
+/* Footer */
+footer{
+    padding: 2rem;
+    font-size: 1.5rem;
+    background-color: var(--bgColor);
+    color: var(--textColor);
+}

@@ -1,0 +1,20 @@
+@media only screen and (min-width:50rem){
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: row;
+    }
+    #hamburger{
+        display: none;
+    }
+    #cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+
