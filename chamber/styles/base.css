@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
-    --bgColor: black;
-    --bgColorHover: gold;
-    --textColor: gold;
+    --lightmodeMainColor: white;
+    --lightmodeBackgroundColor: #333;
+    --lightmodeLightBackgroundColor: grey;
+
+    --darkmodeMainColor: #333;
+    --darkmodeBackgroundColor: black;
+    --darkmodeLightBackgroundColor: grey;
+    
+    --lightTextColor: gold;
+    --darkTextColor: black;
 }
 
 body{
@@ -13,57 +20,76 @@ body{
 /* Header */
 header{
     display: flex;
-    padding: 2rem;
-    background-color: var(--bgColorHover);
+    padding: 1rem;
+    background-color: var(--lightTextColor);
+    color: var(--darkTextColor);
 }
 
 header img{
-    max-width: 10rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 header h1{
     margin: 2rem;
+    font-size: 2rem;
     align-items: center;
     justify-content: center;
 }
-/* Hamburger */
+/* Navigation */
+
 nav{
-    background-color: var(--bgColor);
-    margin-bottom: 1rem;
+    background-color: var(--lightmodeBackgroundColor);
 }
 
 nav a{
     padding: 2rem;
     font-size: 1.5rem;
     text-decoration: none;
-    color: var(--textColor);
+    color: var(--lightTextColor);
 }
 
-nav a:hover, #hamburger:hover{
-    background-color: var(--bgColorHover);
-    color: black;
+nav a:hover{
+    color: var(--darkTextColor);
+    background-color: var(--lightTextColor);
     transition: 0.2s;
+}
+
+/* Hamburger */
+
+#hamburger{
+    font-size: 2rem;
+    padding: 2rem;
+    border: 0;
+    color: var(--lightTextColor);
+    background-color: var(--lightmodeBackgroundColor);
+}
+
+#darkmode{
+    font-size: 2rem;
+    padding: 2rem;
+    border: 0;
+    color: var(--darkTextColor);
+    background-color: var(--lightTextColor);
+}
+
+#darkmode:hover{
+    background-color: var(--lightmodeBackgroundColor);
+    color: var(--lightTextColor);
+    transition: 0.2s;
+}
+
+#hamburger::before {
+    content: "☰";
+}
+
+#hamburger.open::before {
+    content: "X";
 }
 
 .navigation{
     display: none;
     flex-direction: column;
-}
-
-#hamburger{
-	font-size: 2rem;
-    padding: 2rem;
-    color: white;
-    background-color: var(--bgColor);
-    border: 0;
-}
-
-#hamburger::before {
-	content: "☰";
-}
-
-#hamburger.open::before {
-	content: "X";
 }
 
 .navigation.show{
@@ -74,6 +100,11 @@ nav a:hover, #hamburger:hover{
     font-size: 2rem;
 }
 
+/* Main */
+
+main{
+    padding: 1rem 0;
+}
 /* Cards */
 .card{
     border: 1px solid;
@@ -81,7 +112,7 @@ nav a:hover, #hamburger:hover{
 }
 
 .card h2{
-    background-color: black;
+    background-color: var(--lightmodeBackgroundColor);
     color: gold;
     padding: 1rem;
     margin-top: 0;
@@ -91,6 +122,6 @@ nav a:hover, #hamburger:hover{
 footer{
     padding: 2rem;
     font-size: 1.5rem;
-    background-color: var(--bgColor);
-    color: var(--textColor);
+    background-color: var(--lightmodeBackgroundColor);
+    color: var(--lightTextColor);
 }

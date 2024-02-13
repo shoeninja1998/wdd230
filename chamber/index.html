@@ -24,11 +24,12 @@
 <!-- Scripts -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
 
     <title>Chandelier Chamber of Commerce</title>
 
 </head>
-<body>
+<body class="light-mode">
     <header>
         <img src="images/favicon.webp" alt="Chandelier Chamber of Commerce logo">
         <h1>Chandelier Chamber of Commerce</h1>
@@ -41,6 +42,7 @@
             <a href="">Link 3</a>
             <a href="">Link 4</a>
         </div>
+        <button id="darkmode">DARK</button>
     </nav>
     <main>
         <!-- Hero image -->
@@ -50,14 +52,40 @@
         <div id="cards">
             <section id="current-event" class="card">
                 <h2>Current Events</h2>
+                <ul>
+                    <li>
+                        <h3>Chandelier Tech Expo Unveils Cutting-Edge Innovations</h3>
+                        <p>The Chandelier Tech Expo showcased groundbreaking technologies ranging from artificial intelligence to sustainable energy solutions, drawing attention from tech enthusiasts and investors alike.</p>
+                        <h3>Local Artist Wins National Recognition</h3>
+                        <p>A talented Chandelier artist gained national acclaim for their unique and thought-provoking art installation, earning recognition in prestigious art magazines and galleries across the country.</p>
+                        <h3>Chandelier Green Initiative Launches Urban Garden Project</h3>
+                        <p>The city announced a new initiative to promote sustainability by transforming vacant lots into urban gardens. The project aims to provide fresh produce for local residents and promote eco-friendly practices.</p>
+                    </li>
+                </ul>
             </section>
             <!-- Weather card section -->
             <section id="weather" class="card">
                 <h2>Weather</h2>
+                <p>32&deg; Fahrenheit</p>
+                <p>0&deg; Celsius</p>
             </section>
             <!-- Section containing 1-3 company spotlight advertisements -->
             <section id="spotlight" class="card">
                 <h2>Spotlights</h2>
+                <ul>
+                    <li>
+                        <h3>ByteWave Innovations</h3>
+                        <p>Website: bytewaveinnovations.com</p>
+                    </li>
+                    <li>
+                        <h3>GreenHarbor Gardens</h3>
+                        <p>Website: greenharborgardens.com</p>
+                    </li>
+                    <li>
+                        <h3>TechSprint Solutions</h3>
+                        <p>Website: techsprintsolutions.com</p>
+                    </li>
+                </ul>
             </section>
         </div>
     </main>
