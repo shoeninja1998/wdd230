@@ -7,7 +7,10 @@
 :root{
     --bgColor: navy;
     --bgColorHover: rgb(100, 100, 255);
-    --textColor1: white;
+
+    --lightTextColor: white;
+    --darkTextColor: black;
+    --lightTextBackgroundColor: white;
 }
 
 body{
@@ -40,7 +43,7 @@ nav{
 nav a{
     padding: 2rem;
     text-decoration: none;
-    color: var(--textColor1);
+    color: var(--lightTextColor);
 }
 
 nav a:hover{
@@ -80,6 +83,22 @@ nav a:hover{
     display: flex;
 }
 
+/* Main */
+#temple-img1{
+    display: none;
+}
+#temple-img2{
+    display: block;
+    width: 100%;
+}
+#temple-text{
+    display: none;
+}
+#google-maps{
+    width: 100%;
+}
+
+/* Card class */
 .card{
     border: 1px solid;
     margin: 1rem 0;
@@ -91,7 +110,7 @@ nav a:hover{
     padding: 1rem;
     text-align: center;
 
-    color: var(--textColor1);
+    color: var(--lightTextColor);
     background-color: var(--bgColor);
 }
 
@@ -103,9 +122,9 @@ nav a:hover{
     margin: 1rem;
 }
 
+/* Footer  */
 footer{
     padding: 1rem;
-
-    color: var(--textColor1);
+    color: var(--lightTextColor);
     background-color: var(--bgColor);
 }

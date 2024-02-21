@@ -17,9 +17,23 @@
         margin: 1rem;
         width: 100%;
     }
-
     #hamburger{
         display: none;
     }
-
+    #temple-img1{
+        display: block;
+        width: 100%;
+    }
+    #temple-img2{
+        display: none;
+    }
+    #temple-text{
+        display: block;
+        position: absolute;
+        top: 500px;
+        right: 50px;
+        font-size: 2rem;
+        padding: 1rem;
+        background-color: var(--lightTextBackgroundColor);
+    }
 }
