@@ -84,15 +84,14 @@ nav a:hover{
 }
 
 /* Main */
-#temple-img1{
-    display: none;
-}
-#temple-img2{
-    display: block;
+.temple-img{
     width: 100%;
 }
 #temple-text{
     display: none;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: var(--lightTextBackgroundColor);
 }
 #google-maps{
     width: 100%;
