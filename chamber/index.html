@@ -6,25 +6,22 @@
     <meta name="author" content="Bradley Rennick">
     <meta name="description" content="WDD 230 - Web Frontend Development: Chandelier Chamber of Commerce">
 
-<!-- Social Media Meta -->
     <meta property="og:url"                content="https://shoeninja1998.github.io/wdd230/chamber/index.html">
     <meta property="og:type"               content="Website">
     <meta property="og:title"              content="Bradley Rennick - WDD 230 - Web Frontend Development">
     <meta property="og:image"              content="https://www.dropbox.com/scl/fi/z533o3djvjxgdu4wqljlx/cityscape.jpg?rlkey=n8gvh0j95hf0l1d55sxx91xru&dl=0">
 
-<!-- Favicon -->
     <link rel="icon" href="images/favicon.webp">
 
-<!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-<!-- Scripts -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 
     <title>Chandelier Chamber of Commerce</title>
 
@@ -46,7 +43,11 @@
     </nav>
     <main>
         <!-- Hero image -->
-        
+        <picture">
+            <source class="hero-img" srcset="images/test-hero-1400.webp" media="(min-width: 1400px)">
+            <source class="hero-img" srcset="images/test-hero-1000.webp" media="(min-width: 1000px)">
+            <img class="hero-img" src="images/test-hero-600.webp" alt="Hero image">
+        </picture>
         <!-- Call to action link -->
         <a id="action" href="">Join the Chamber!</a>
         <!-- Current event section -->
@@ -67,8 +68,9 @@
             <!-- Weather card section -->
             <section id="weather" class="card">
                 <h2>Weather</h2>
-                <p>32&deg; Fahrenheit</p>
-                <p>0&deg; Celsius</p>
+                <p>Temperature: <span id="temperature"></span>&deg;F</p>
+                <p>Wind Speed: <span id="windspeed"></span> mph</p>
+                <p>Wind Chill: <span id="windchill"></span>&deg;F</p>
             </section>
             <!-- Section containing 1-3 company spotlight advertisements -->
             <section id="spotlight" class="card">

@@ -107,6 +107,10 @@ main{
     padding: 1rem 0;
 }
 
+.hero-img{
+    width: 100%;
+}
+
 /* Cards */
 .card{
     border: 1px solid;
