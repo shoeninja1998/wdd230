@@ -18,12 +18,10 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
     }
-    #temple-img1{
-        display: flex;
-        width: 100%;
-    }
-    #temple-img2{
-        display: none;
+    /* Discover Page */
+    #discover-main{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
     }
 }
 

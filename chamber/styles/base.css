@@ -37,6 +37,7 @@ header h1{
     align-items: center;
     justify-content: center;
 }
+
 /* Navigation */
 
 nav{
@@ -50,7 +51,7 @@ nav a{
     color: var(--lightTextColor);
 }
 
-nav a:hover{
+nav a:hover, #active{
     color: var(--darkTextColor);
     background-color: var(--lightTextColor);
     transition: 0.2s;
