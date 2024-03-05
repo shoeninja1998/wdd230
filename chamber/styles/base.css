@@ -132,3 +132,34 @@ footer{
     background-color: var(--lightmodeBackgroundColor);
     color: var(--lightTextColor);
 }
+
+/* Join Page */
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#text-inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+#submit-button{
+    grid-column: span 2;
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+
+    border: none;
+    background-color: var(--lightTextColor);
+}
+
+#text-inputs{
+    text-align: left;
+    align-items: center;
+}
+
+.text-input{
+    padding: 1rem;
+}
