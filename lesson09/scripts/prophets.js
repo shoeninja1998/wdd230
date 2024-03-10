@@ -12,6 +12,7 @@ const displayProphets = (prophets) => {
         let name = document.createElement("h2");
         let image = document.createElement("img");
         let card = document.createElement("section");
+        card.classList.add('card');
 
         name.textContent = `${prophet.name} ${prophet.lastname}`
 

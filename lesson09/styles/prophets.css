@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
 #cards{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.card{
+    background-color: rgb(200, 255, 240);
+    margin: 1rem;
+    padding-bottom: 2rem;
 }
