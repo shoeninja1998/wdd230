@@ -163,3 +163,60 @@ form{
 .text-input{
     padding: 1rem;
 }
+
+/* Directory Page */
+
+.directoryCard{
+    background-color: grey;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.grid section {
+	text-align: center;
+}
+
+.grid img {
+	border: 1px solid #fff;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none;
+}
+
+.list section h3 {
+	font-size: 1rem;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}

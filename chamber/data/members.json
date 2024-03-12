@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Tech Solutions Inc.",
+            "address": "123 Main Street, Cityville",
+            "phoneNumber": "+1 (555) 123-4567",
+            "websiteURL": "http://techsolutions.com",
+            "imageFile": "./images/business-placeholder.webp",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "Elite Fitness Center",
+            "address": "456 Fitness Avenue, Healthtown",
+            "phoneNumber": "+1 (555) 987-6543",
+            "websiteURL": "http://elitefitnesscenter.com",
+            "imageFile": "./images/business-placeholder.webp",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Gourmet Delights Catering",
+            "address": "789 Catering Lane, Foodville",
+            "phoneNumber": "+1 (555) 234-5678",
+            "websiteURL": "http://gourmetdelights.com",
+            "imageFile": "./images/business-placeholder.webp",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Fashion Trends Boutique",
+            "address": "101 Fashion Street, Stylecity",
+            "phoneNumber": "+1 (555) 876-5432",
+            "websiteURL": "http://fashiontrends.com",
+            "imageFile": "./images/business-placeholder.webp",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Green Thumb Landscaping",
+            "address": "222 Garden Avenue, Greenvillage",
+            "phoneNumber": "+1 (555) 345-6789",
+            "websiteURL": "http://greenthumblandscaping.com",
+            "imageFile": "./images/business-placeholder.webp",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "Luxury Spa Haven",
+            "address": "333 Serenity Lane, Tranquilitytown",
+            "phoneNumber": "+1 (555) 654-3210",
+            "websiteURL": "http://luxuryspahaven.com",
+            "imageFile": "./images/business-placeholder.webp",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "The Artisan Workshop",
+            "address": "444 Craft Street, Artsville",
+            "phoneNumber": "+1 (555) 789-0123",
+            "websiteURL": "http://theartisanworkshop.com",
+            "imageFile": "./images/business-placeholder.webp",
+            "membershipLevel": "Silver"
+        }
+    ]
+}

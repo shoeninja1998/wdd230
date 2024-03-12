@@ -23,6 +23,9 @@
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
+    .list section img{
+        display: block;
+    }
 }
 
 
