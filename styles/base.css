@@ -17,6 +17,7 @@ body{
     font-family: 'Poppins', sans-serif;
     text-align: center;
     margin: 0;
+    font-size: 1.5rem;
 }
 
 header{
@@ -110,7 +111,6 @@ form label{
 .card{
     border: 1px solid;
     margin: 1rem 0;
-    text-align: left;
 }
 
 .card h3{
@@ -124,6 +124,7 @@ form label{
 
 .card ul{
     list-style: none;
+    padding: 0;
 }
 
 .card p{
