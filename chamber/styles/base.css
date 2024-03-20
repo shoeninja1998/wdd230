@@ -11,6 +11,8 @@
     --lightTextColor: gold;
     --darkTextColor: black;
     --lightTextBackgroundColor: white;
+
+    --bannerBackgroundColor: white;
 }
 
 body{
@@ -103,6 +105,14 @@ nav a:hover, #active{
 }
 
 /* Main */
+#banner{
+    background-color: var(--bannerBackgroundColor);
+    display: flex;
+}
+
+#bannerButton{
+    
+}
 
 main{
     padding: 1rem 0;
@@ -191,7 +201,7 @@ form{
 .grid section > * {
 	margin: 0.1rem;
 }
-
+F
 
 .list {
 	display: flex;

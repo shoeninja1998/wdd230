@@ -21,8 +21,7 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
-    
+    <script src="scripts/weather.js" defer></script>
 
     <title>Chandelier Chamber of Commerce</title>
 
@@ -43,6 +42,10 @@
         <button id="darkmode">DARK</button>
     </nav>
     <main>
+        <div id="banner">
+            <p>Join us at the Chamber of Commerce Meet & Greet this Wednesday @ 7:00pm!</p>
+            <button onclick="CloseBanner()" id="bannerButton">X</button>
+        </div>
         <!-- Hero image -->
         <picture>
             <source class="hero-img" srcset="images/test-hero-1400.webp" media="(min-width: 1400px)">
@@ -70,8 +73,10 @@
             <section id="weather" class="card">
                 <h2>Weather</h2>
                 <p>Temperature: <span id="temperature"></span>&deg;F</p>
-                <p>Wind Speed: <span id="windspeed"></span> mph</p>
-                <p>Wind Chill: <span id="windchill"></span>&deg;F</p>
+                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+                <p>Wind Chill: <span id="windChill"></span>&deg;F</p>
+                <h3>3-Day Forecast</h3>
+                <p><span id="forecast"></span></p>
             </section>
             <!-- Section containing 1-3 company spotlight advertisements -->
             <section id="spotlight" class="card">
