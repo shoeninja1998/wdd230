@@ -14,6 +14,10 @@ function DisplayBanner()
     {
         banner.style.display = 'grid';
     }
+    else
+    {
+        banner.style.display = 'none';
+    }
 }
 function CloseBanner()
 {

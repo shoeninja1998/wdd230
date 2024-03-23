@@ -2,7 +2,7 @@
 const apiKey = "53f08f4aed81ac6ae9222e0ab578f708";
 const lat = 43.826;
 const lon = -111.7897;
-const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
+const apiURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
 
 const forecast = document.querySelector('#forecast');
 const temperature = document.querySelector('#temperature');
@@ -13,7 +13,7 @@ async function apiFetch()
 {
     try
     {
-        const response = await fetch(url);
+        const response = await fetch(apiURL);
         if (response.ok)
         {
             const data = await response.json();
