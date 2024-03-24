@@ -11,24 +11,18 @@ const windChill = document.querySelector('#windChill');
 
 async function apiFetch()
 {
-    try
+    const response = await fetch(apiURL);
+    if (response.ok)
     {
-        const response = await fetch(apiURL);
-        if (response.ok)
-        {
-            const data = await response.json();
-            GetForecast(data);
-            GetWeather(data);
-        }
-        else
-        {
-            throw Error(await response.text());
-        }
+        const data = await response.json();
+        GetForecast(data);
+        GetWeather(data);
     }
-    catch (error)
+    else
     {
-        console.log(error);
+        throw Error(await response.text());
     }
+
 }
 // Forecast
 function GetForecast(data) 

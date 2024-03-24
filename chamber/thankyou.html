@@ -11,6 +11,10 @@
     <meta property="og:title"              content="Bradley Rennick - Chamber of Commerce Page - WDD 230 - Web Frontend Development">
     <meta property="og:image"              content="https://www.dropbox.com/scl/fi/z533o3djvjxgdu4wqljlx/cityscape.jpg?rlkey=n8gvh0j95hf0l1d55sxx91xru&dl=0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="icon" href="images/favicon.webp">
 
     <link rel="stylesheet" href="styles/normalize.css">
@@ -18,21 +22,34 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
+
     <title>Thank You! - Chandelier Chamber of Commerce</title>
 </head>
-<body>
+<body class="light-mode">
     <header>
         <img src="images/favicon.webp" alt="Chandelier Chamber of Commerce logo">
-        <h1>Join - Chandelier Chamber of Commerce</h1>
+        <h1>Chandelier Chamber of Commerce</h1>
     </header>
     <nav>
-        <button id="hamburger" class=""></button>
+        <button id="hamburger" class="button"></button>
         <div class="navigation">
             <a href="index.html">Home</a>
-            <a href="">Link 2</a>
+            <a href="directory.html">Directory</a>
             <a href="discover.html">Discover</a>
             <a href="join.html">Join</a>
         </div>
+        <button id="darkmode" class="button">DARK</button>
     </nav>
+    <main>
+        <h2>Thank you!</h2>
+        <p>Thank you for your submission.</p>
+    </main>
+    <footer>
+        <p>Bradley Rennick, WDD230 Project</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>

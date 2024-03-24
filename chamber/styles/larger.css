@@ -1,4 +1,4 @@
-@media only screen and (min-width:50rem){
+@media only screen and (min-width:40rem){
     header h1{
         font-size: 4rem;
     }
@@ -18,13 +18,45 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
     }
+
+    /* Home Page */
+    #cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #spotlight{
+        grid-column: 3/4;
+    }
+    
     /* Discover Page */
     #discover-main{
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
+
+    #discover-images{
+        margin: 1rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #discover-images img:hover{
+        width: 400px;
+        transition: 0.2s;
+    }
+
+    #discover-images h2{
+        grid-column: span 2;
+    }
+
     .list section img{
         display: block;
+    }
+    /* Join Page */
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
 }
 

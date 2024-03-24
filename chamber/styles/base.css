@@ -1,23 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --lightmodeMainColor: white;
     --lightmodeBackgroundColor: #333;
-    --lightmodeLightBackgroundColor: grey;
+    --lightmodeLightBackgroundColor: rgb(200, 200, 200);
 
     --darkmodeMainColor: #333;
     --darkmodeBackgroundColor: black;
-    --darkmodeLightBackgroundColor: grey;
+    --darkmodeLightBackgroundColor: rgb(200, 200, 200);
     
     --lightTextColor: gold;
     --darkTextColor: black;
     --lightTextBackgroundColor: white;
 
-    --bannerBackgroundColor: white;
+    --bannerBackgroundColor: gold;
+    --bannerButtonBG: black;
 }
 
 body{
     font-family: "Montserrat", sans-serif;
     text-align: center;
+}
+
+/* Buttons */
+.button{
+    border: none;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+#submitButton{
+    grid-column: span 2;
+    width: 50%;
+    margin: auto;
+    background-color: var(--lightTextColor);
+}
+
+#bannerButton{
+    background-color: var(--bannerButtonBG);
+    color: var(--lightTextColor);
+}
+
+#callToActionButton{
+    background-color: var(--bannerBackgroundColor);
+    font-size: 2rem;
+}
+
+/* Home Page */
+#banner{
+    background-color: var(--bannerBackgroundColor);
+    padding: 1rem;
+}
+
+#banner h3{
+    margin: 0;
 }
 
 /* Header */
@@ -26,6 +60,7 @@ header{
     padding: 1rem;
     background-color: var(--lightTextColor);
     color: var(--darkTextColor);
+    align-items: center;
 }
 
 header img{
@@ -53,7 +88,7 @@ nav a{
     color: var(--lightTextColor);
 }
 
-nav a:hover, #active{
+nav a:hover, .active{
     color: var(--darkTextColor);
     background-color: var(--lightTextColor);
     transition: 0.2s;
@@ -100,33 +135,17 @@ nav a:hover, #active{
     display: flex;
 }
 
-#action{
-    font-size: 2rem;
-}
-
 /* Main */
-#banner{
-    background-color: var(--bannerBackgroundColor);
-    display: flex;
-}
-
-#bannerButton{
-    
-}
-
-main{
-    padding: 1rem 0;
-}
 
 .hero-img{
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 /* Cards */
 .card{
     border: 1px solid;
     margin: 1rem;
-    padding: 1rem;
 }
 
 .card h2{
@@ -145,89 +164,63 @@ footer{
 }
 
 /* Join Page */
-form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
 
 #text-inputs{
     display: flex;
     flex-direction: column;
 }
 
-#submit-button{
-    grid-column: span 2;
-    padding: 1rem;
-    width: 50%;
-    margin: auto;
-
-    border: none;
-    background-color: var(--lightTextColor);
+#membership{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
 }
-
-#text-inputs{
+.text-input{
+    margin: 1rem;
     text-align: left;
     align-items: center;
-}
-
-.text-input{
-    padding: 1rem;
 }
 
 /* Directory Page */
 
 .directoryCard{
-    background-color: grey;
-    margin: 2rem auto;
+    background-color: var(--lightmodeLightBackgroundColor);
+    margin: 0;
     padding: 2rem 0;
     width: 100%;
 }
 
+.directoryCard:nth-child(even){
+    background-color: rgb(238, 232, 187);
+}
+
+#directoryButtons{
+    margin: 1rem;
+}
+
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 5px;
-	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 10px;
 }
 
-.grid section {
-	text-align: center;
-}
-
-.grid img {
-	border: 1px solid #fff;
-}
-
-.grid section > * {
-	margin: 0.1rem;
-}
-F
 
 .list {
-	display: flex;
+    display: flex;
 	flex-direction: column;
 }
 
-.list section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
+.list img{
+    margin-right: 1rem;
 }
 
-.list section > * {
-	margin: 0 1rem;
+.list section {
+	display: flex;
+    justify-content: flex-start;
+	padding: 1rem;
+    text-align: left;
 }
 
 .list section img {
 	display: none;
-}
-
-.list section h3 {
-	font-size: 1rem;
-}
-
-.list section:nth-child(even) {
-	background-color: #bed;
 }

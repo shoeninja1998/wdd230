@@ -11,6 +11,10 @@
     <meta property="og:title"              content="Bradley Rennick - Chamber of Commerce Page - WDD 230 - Web Frontend Development">
     <meta property="og:image"              content="https://www.dropbox.com/scl/fi/z533o3djvjxgdu4wqljlx/cityscape.jpg?rlkey=n8gvh0j95hf0l1d55sxx91xru&dl=0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="icon" href="images/favicon.webp">
 
     <link rel="stylesheet" href="styles/normalize.css">
@@ -20,23 +24,25 @@
 
     <script src="scripts/lastvisit.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 
     <title>Discover - Chandelier Chamber of Commerce</title>
 </head>
-<body>
+<body class="light-mode">
     <header>
         <img src="images/favicon.webp" alt="Chandelier Chamber of Commerce logo">
-        <h1>Chandelier Chamber of Commerce</h1>
+        <h1>Discover - CCoC</h1>
     </header>
     <nav>
-        <button id="hamburger" class=""></button>
+        <button id="hamburger" class="button"></button>
         <div class="navigation">
             <a href="index.html">Home</a>
             <a href="directory.html">Directory</a>
-            <a id="active" href="#">Discover</a>
+            <a class="active" href="#">Discover</a>
             <a href="join.html">Join</a>
         </div>
-        <button id="darkmode">DARK</button>
+        <button id="darkmode" class="button">DARK</button>
     </nav>
     <main id="discover-main">
         <div>
@@ -49,43 +55,37 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio ab perferendis sit illum facere tempora qui laudantium maxime magnam eveniet officiis ducimus, vitae numquam dolorem, odit hic molestias nobis.</p>
             </section>
         </div>
-        <div>
-            <picture>
-                <source srcset="images/" media="(min-width: px)">
-                <source srcset="images/" media="(min-width: px)">
-                <img src="images/" loading="lazy">
-            </picture>
-                <p>Caption</p>
-            <picture>
-                <source srcset="images/" media="(min-width: px)">
-                <source srcset="images/" media="(min-width: px)">
-                <img src="images/" loading="lazy">
-            </picture>
-            <picture>
-                <source srcset="images/" media="(min-width: px)">
-                <source srcset="images/" media="(min-width: px)">
-                <img src="images/" loading="lazy">
-            </picture>
-                <p>Caption</p>
-            <picture>
-                <source srcset="images/" media="(min-width: px)">
-                <source srcset="images/" media="(min-width: px)">
-                <img src="images/" loading="lazy">
-            </picture>
-            <picture>
-                <source srcset="images/" media="(min-width: px)">
-                <source srcset="images/" media="(min-width: px)">
-                <img src="images/" loading="lazy">
-            </picture>
-                <p>Caption</p>
-            <picture>
-                <source srcset="images/" media="(min-width: px)">
-                <source srcset="images/" media="(min-width: px)">
-                <img src="images/" loading="lazy">
-            </picture>
-                <p>Caption</p>
-    
-        </div>
+        <section id="discover-images" class="card">
+            <h2>Images</h2>
+            <div>
+                <img src="images/city1.webp" loading="lazy" width="300" alt="Picture of our city">
+                <p>A shot of our city!</p>
+            </div>
+            <div>
+                <img src="images/city2.webp" loading="lazy" width="300" alt="Picture of our city">
+                <p>Another shot of our city!</p>
+            </div>
+            <div>
+                <img src="images/park1.webp" loading="lazy" width="300" alt="Picture of a park">
+                <p>One of our parks!</p>  
+            </div>
+            <div>
+                <img src="images/park2.webp" loading="lazy" width="300" alt="Picture of a park">
+            <p>Another one of our parks!</p>
+            </div>
+            <div>
+                <img src="images/market1.webp" loading="lazy" width="300" alt="Picture of a market">
+            <p>One of our markets!</p>
+            </div>
+            <div>
+                <img src="images/market2.webp" loading="lazy" width="300" alt="Picture of a market">
+            <p>Another one of our markets!</p>
+            </div>
+        </section>
     </main>
+    <footer>
+        <p>Bradley Rennick, WDD230 Project</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>

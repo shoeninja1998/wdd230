@@ -11,6 +11,10 @@
     <meta property="og:title"              content="Bradley Rennick - Chamber of Commerce Page - WDD 230 - Web Frontend Development">
     <meta property="og:image"              content="https://www.dropbox.com/scl/fi/z533o3djvjxgdu4wqljlx/cityscape.jpg?rlkey=n8gvh0j95hf0l1d55sxx91xru&dl=0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="icon" href="images/favicon.webp">
 
     <link rel="stylesheet" href="styles/normalize.css">
@@ -23,8 +27,9 @@
     <script src="scripts/darkmode.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
 
-    <title>Chandelier Chamber of Commerce</title>
+    <title>Home - Chandelier Chamber of Commerce</title>
 
 </head>
 <body class="light-mode">
@@ -33,28 +38,29 @@
         <h1>Chandelier Chamber of Commerce</h1>
     </header>
     <nav>
-        <button id="hamburger" class=""></button>
+        <button id="hamburger" class="button"></button>
         <div class="navigation">
-            <a id="active" href="#">Home</a>
+            <a class="active" href="#">Home</a>
             <a href="directory.html">Directory</a>
             <a href="discover.html">Discover</a>
             <a href="join.html">Join</a>
         </div>
-        <button id="darkmode">DARK</button>
+        <button id="darkmode" class="button">DARK</button>
     </nav>
     <main>
-        <div id="banner">
+        <section id="banner">
+            <h3>Chandelier Meet & Greet</h3>
             <p>Join us at the Chamber of Commerce Meet & Greet this Wednesday @ 7:00pm!</p>
-            <button onclick="CloseBanner()" id="bannerButton">X</button>
-        </div>
-        <!-- Hero image -->
+            <button onclick="CloseBanner()" id="bannerButton" class="button">X</button>
+        </section>
+<!-- Hero image -->
         <picture>
             <source class="hero-img" srcset="images/test-hero-1400.webp" media="(min-width: 1400px)">
             <source class="hero-img" srcset="images/test-hero-1000.webp" media="(min-width: 1000px)">
             <img class="hero-img" src="images/test-hero-600.webp" alt="Hero image">
         </picture>
 <!-- Call to action link -->
-        <a id="action" href="">Join the Chamber!</a>
+        <button onclick="window.location.href='join.html'" id="callToActionButton" class="button" >Join the Chamber!</button>
 <!-- Current events -->
         <div id="cards">
             <section id="current-event" class="card">

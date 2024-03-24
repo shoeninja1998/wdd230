@@ -12,6 +12,7 @@ function displayMembers(members){
             image.setAttribute('alt', member.name);
             image.setAttribute('loading', 'lazy');
             image.setAttribute('width', '200');
+            image.setAttribute('height', '200');
 
             let sectionHTML = `
             ${image.outerHTML}
@@ -39,13 +40,16 @@ async function getMemberData(){
 
 getMemberData();
 
-const gridbutton = document.querySelector("#grid-button");
-const listbutton = document.querySelector("#list-button");
+const gridbutton = document.querySelector("#gridButton");
+const listbutton = document.querySelector("#listButton");
 const display = document.querySelector('#members');
 
 gridbutton.addEventListener("click", () => {
 	display.classList.add("grid");
 	display.classList.remove("list");
+
+    gridbutton.classList.add('active');
+    listbutton.classList.remove('active');
 });
 
 listbutton.addEventListener("click", showList);
@@ -53,5 +57,8 @@ listbutton.addEventListener("click", showList);
 function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
+
+    listbutton.classList.add('active');
+    gridbutton.classList.remove('active');
 }
 

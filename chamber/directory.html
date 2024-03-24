@@ -11,6 +11,10 @@
     <meta property="og:title"              content="Bradley Rennick - Chamber of Commerce Page - WDD 230 - Web Frontend Development">
     <meta property="og:image"              content="https://www.dropbox.com/scl/fi/z533o3djvjxgdu4wqljlx/cityscape.jpg?rlkey=n8gvh0j95hf0l1d55sxx91xru&dl=0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="icon" href="images/favicon.webp">
 
     <link rel="stylesheet" href="styles/normalize.css">
@@ -19,30 +23,34 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
     
     <title>Directory - Chandelier Chamber of Commerce</title>
 </head>
-<body>
+<body class="light-mode">
     <header>
         <img src="images/favicon.webp" alt="Chandelier Chamber of Commerce logo">
-        <h1>Chandelier Chamber of Commerce</h1>
+        <h1>Directory - CCoC</h1>
     </header>
     <nav>
-        <button id="hamburger" class=""></button>
+        <button id="hamburger" class="button"></button>
         <div class="navigation">
             <a href="index.html">Home</a>
-            <a id="active" href="#">Directory</a>
+            <a class="active" href="#">Directory</a>
             <a href="discover.html">Discover</a>
             <a href="join.html">Join</a>
         </div>
-        <button id="darkmode">DARK</button>
+        <button id="darkmode" class="button">DARK</button>
     </nav>
     <main>
-        <button id="grid-button">Grid</button>
-        <button id="list-button">List</button>
-        <article id="members">
-
-        </article>
+        <div id="directoryButtons">
+            <button id="gridButton" class="active button">Grid</button>
+            <button id="listButton" class="button">List</button>
+        </div>
+        <div id="members" class="grid">
+        </div>
     </main>
     <footer>
         <p>Bradley Rennick, WDD230 Project</p>

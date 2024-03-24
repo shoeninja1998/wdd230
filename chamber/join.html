@@ -11,53 +11,65 @@
     <meta property="og:title"              content="Bradley Rennick - Chamber of Commerce Page - WDD 230 - Web Frontend Development">
     <meta property="og:image"              content="https://www.dropbox.com/scl/fi/z533o3djvjxgdu4wqljlx/cityscape.jpg?rlkey=n8gvh0j95hf0l1d55sxx91xru&dl=0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="icon" href="images/favicon.webp">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
     
     <title>Join - Chandelier Chamber of Commerce</title>
 </head>
-<body>
+<body class="light-mode">
     <header>
         <img src="images/favicon.webp" alt="Chandelier Chamber of Commerce logo">
-        <h1>Chandelier Chamber of Commerce</h1>
+        <h1>Join - CCoC</h1>
     </header>
     <nav>
-        <button id="hamburger" class=""></button>
+        <button id="hamburger" class="button"></button>
         <div class="navigation">
             <a href="index.html">Home</a>
             <a href="directory.html">Directory</a>
             <a href="discover.html">Discover</a>
-            <a id="active" href="#">Join</a>
+            <a class="active" href="#">Join</a>
         </div>
-        <button id="darkmode">DARK</button>
+        <button id="darkmode" class="button">DARK</button>
     </nav>
     <main>
         <form action="thankyou.html" method="get">
-            <fieldset id="text-inputs">
+            <section id="text-inputs" class="card">
                 <h2>Membership Info</h2>
                 <label class="text-input">First Name<br><input type="text" id="fname" name="fname" required></label>
                 <label class="text-input">Last Name<br><input type="text" id="lname" name="lname" required></label>
-                <label class="text-input">Company Title<br><input type="text" id="title" name="title" required pattern="[A-Za-z\- ]{7,}"></label>
+                <label class="text-input">Business Title<br><input type="text" id="title" name="title" required pattern="[A-Za-z\- ]{7,}"></label>
                 <label class="text-input">Email<br><input type="email" id="email" name="email" required></label>
                 <label class="text-input">Mobile Phone<br><input type="tel" id="phone" name="phone" required></label>
                 <label class="text-input">Organization Name<br><input type="text" id="organization" name="organization" required></label>
                 <label class="text-input">Description<br><textarea id="description" name="description"></textarea></label>
-            </fieldset>
-            <fieldset id="membership">
+            </section>
+            <section id="membership" class="card">
                 <h2>Membership Level</h2>
                     <label class="myradio"><br><input type="radio" name="level" value="nonprofit"> Non-Profit</label>
                     <label class="myradio"><br><input type="radio" name="level" value="bronze"> Bronze</label>
                     <label class="myradio"><br><input type="radio" name="level" value="silver"> Silver</label>
                     <label class="myradio"><br><input type="radio" name="level" value="gold"> Gold</label>
                 <br>
-                <button id="submit-button" type="submit">Submit</button>
-                </fieldset>
+                <button id="submitButton" class="button" type="submit">Send The Info!</button>
+                </section>
             <input type="hidden" id="time" name="time">
         </form>
     </main>
+    <footer>
+        <p>Bradley Rennick, WDD230 Project</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>

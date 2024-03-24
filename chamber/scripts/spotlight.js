@@ -17,22 +17,20 @@ function displayMembers(members){
             let randomIndex = Math.floor(Math.random() * spotlights.length);
             chosenSpotlights.push(spotlights[randomIndex]);
             spotlights.splice(randomIndex, 1);
-            console.log(i);
         }
         chosenSpotlights.forEach((member) =>
         {
             let section = document.createElement('section')
-            section.classList.add('directoryCard');
     
             let image = document.createElement('img');
             image.setAttribute('src', member.imageFile);
             image.setAttribute('alt', member.name);
             image.setAttribute('loading', 'lazy');
-            image.setAttribute('width', '200');
+            image.setAttribute('width', '150');
     
             let sectionHTML = `
-            <div class=directoryCardText>
-            <h2>${member.name}</h2>
+            <div class="card">
+            <h3>${member.name}</h3>
             ${image.outerHTML}
             <h3>${member.membershipLevel}</h3>
             <p>${member.address}</p>
