@@ -146,6 +146,7 @@ nav a:hover, .active{
 .card{
     border: 1px solid;
     margin: 1rem;
+    padding: 0.5rem;
 }
 
 .card h2{
