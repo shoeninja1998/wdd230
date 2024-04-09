@@ -1,7 +1,7 @@
 :root{
     --background: rgb(207, 255, 188);
-    --linkBackground: #ffdb88;
-    --linkBackgroundHover: #ff831d;
+    --linkBackground: #ffc34c;
+    --linkBackgroundHover: #ff4400;
     --textBackground: #b9ffbc;
     --textBackground2: #a9c4ff;
 }
@@ -28,6 +28,11 @@ header, footer{
 
 footer{
     margin: 1rem 0 0;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
 }
 
 #active{

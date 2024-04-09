@@ -38,17 +38,17 @@
             <div id="drinkInfo">
                 <section class="drink card">
                 <h2>Your Info</h2>
-                    <input type="text" name="fname" placeholder="Name" required>
-                    <input type="tel" name="phone" placeholder="Phone" required>
-                    <input type="email" name="email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                    <label>First Name <input type="text" name="fname"  required></label>
+                    <label>Phone Number <input type="tel" name="phone"  required></label>
+                    <label>Email <input type="email" name="email"  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required></label>
                     <p>Payment is received when the drink is picked up.</p>
                 </section>
                 <section class="drink card">
                 <h2>Your Drink</h2>
-                    Fruit 1<select class="fruitSelect" name="fruit1"></select>
-                    Fruit 2<select class="fruitSelect" name="fruit2"></select>
-                    Fruit 3<select class="fruitSelect" name="fruit3"></select>
-                    <textarea name="instructions" placeholder="Special Instructions" ></textarea>
+                    <label>Fruit 1 <select class="fruitSelect" name="fruit1"></select></label>
+                    <label>Fruit 2 <select class="fruitSelect" name="fruit2"></select></label>
+                    <label>Fruit 3 <select class="fruitSelect" name="fruit3"></select></label>
+                    <label>Special Instructions <textarea name="instructions"></textarea></label>
                 </section>
             </div>
             <input class="bigButton" type="submit" value="Send my Order!">
