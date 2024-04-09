@@ -1,0 +1,139 @@
+:root{
+    --background: rgb(207, 255, 188);
+    --linkBackground: #ffdb88;
+    --linkBackgroundHover: #ff831d;
+    --textBackground: #b9ffbc;
+    --textBackground2: #a9c4ff;
+}
+
+*{
+    transition: 0.2s;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+body{
+    margin: 0;
+}
+
+header, main, a, .card, footer{
+    padding: 1rem;
+}
+
+header, footer{
+    background-color: var(--background);
+}
+
+footer{
+    margin: 1rem 0 0;
+}
+
+#active{
+    background-color: var(--linkBackgroundHover);
+    color: white;
+}
+
+#hamburger{
+    display: block;
+    justify-content: center;
+    width: 100%;
+}
+
+button, .bigButton{
+    padding: 0.5rem;
+    border: none;
+    background-color: var(--linkBackground);
+}
+
+.bigButton{
+    font-size: 1.5rem;
+    padding: 1rem 5rem;
+}
+
+nav{
+    display: none;
+    justify-content: center;
+    background-color: var(--linkBackground);
+    font-size: 1.5rem;
+}
+
+a:hover, button:hover, .bigButton:hover{
+    background-color: var(--linkBackgroundHover);
+    color: white;
+}
+
+.show{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    border: 5px solid #333;
+    margin: 1rem 0;
+    max-width: 500px;
+}
+
+.main{
+    margin: 1rem;
+}
+
+/* Home Page */
+
+#forecast, #weather{
+    display: flex;
+    justify-content:center;
+}
+
+.weather{
+    width: 100%;
+    padding: 0;
+}
+
+.forecast{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+#information{
+    margin: auto;   
+}
+
+/* Order Drink Page */
+
+form input, form select, form textarea{
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    transition: 0s;
+}
+
+/* Order Confirm Page */
+
+.drink, .centered{
+    margin: 1rem auto;
+}
+
+/* About Us Page */
+#aboutUs{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.aboutText{
+    line-height: 2;
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: var(--textBackground);
+}
+
+.aboutText:nth-of-type(2){
+    background-color: var(--textBackground2);
+}
+
+.image, iframe{
+    width: 100%;
+}

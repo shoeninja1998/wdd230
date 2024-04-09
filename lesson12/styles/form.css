@@ -1,0 +1,14 @@
+section{
+    outline: 1px solid;
+    background-color: aliceblue;
+    padding: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    padding: 0.2rem 0;
+}

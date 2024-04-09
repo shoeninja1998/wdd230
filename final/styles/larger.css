@@ -1,0 +1,44 @@
+@media only screen and (min-width: 60rem){
+    #hamburger{
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
+/* Home Page */
+    #home-div{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #information{
+        margin: 1rem;
+    }
+
+/* Order Drink Page */
+    #drinkInfo{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .drink{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+/* About Us Page */
+    #aboutUs{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+        }
+    .aboutText{
+        grid-column: 1/2;
+        margin: 0;
+    }
+    .image{
+        grid-column: 2/3;
+    }
+}

@@ -1,0 +1,19 @@
+p em{
+    color: red;
+}
+
+.quote{
+    color: #777;
+    background-color: #bedbed;
+    border: 1px solid #777;
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px;
+}
+
+.three-col{
+    display: grid;
+    grid-template-columns: 250px 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
