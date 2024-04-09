@@ -8,8 +8,8 @@
 
 *{
     transition: 0.2s;
-    font-family: "Montserrat", sans-serif;
     text-align: center;
+    font-family: 'Roboto';
     text-decoration: none;
     color: #333;
 }
@@ -67,6 +67,10 @@ nav{
 a:hover, button:hover, .bigButton:hover{
     background-color: var(--linkBackgroundHover);
     color: white;
+}
+
+.socialMedia{
+    padding: 3rem 1rem 1rem 0.8rem;
 }
 
 .show{

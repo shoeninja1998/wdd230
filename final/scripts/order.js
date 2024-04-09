@@ -15,9 +15,16 @@ let sugar = 0;
 let protein = 0;
 
 function GetPickupTime(){
-    const currentTime = new Date();
-    const format = {hour: 'numeric', minute: '2-digit', hour12: 'true'};
+    var currentTime = new Date();
+    var format = {hour: 'numeric', minute: '2-digit', hour12: 'true'};
     currentTime.setMinutes(currentTime.getMinutes() + 30);
+    return currentTime.toLocaleTimeString([], format);
+}
+
+function GetOrderTime(){
+    var currentTime = new Date();
+    var format = {year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: '2-digit', hour12: 'true'};
+    currentTime.setMinutes(currentTime.getMinutes());
     return currentTime.toLocaleTimeString([], format);
 }
 
@@ -70,7 +77,10 @@ function SetOrderInfo(){
     document.querySelector('#fruit3').textContent = fruit3;
     
     let pickupTime = GetPickupTime();
+    let orderTime = GetOrderTime();
+
     document.querySelector('#pickupTime').textContent = pickupTime;
+    document.querySelector('#orderTime').textContent = orderTime;
     let instructions = params.get("instructions");
     if (instructions == "")
     {
